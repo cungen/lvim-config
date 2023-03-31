@@ -1,0 +1,24 @@
+{
+  "name": "nvim-snippets",
+  "author": "cungen",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "vue"
+        ],
+        "path": "./vue/element.json"
+      },
+      {
+        "language": [
+          "javascript",
+          "vue"
+        ],
+        "path": "./pouchdb.json"
+      }
+    ]
+  }
+}

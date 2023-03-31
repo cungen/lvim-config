@@ -1,0 +1,77 @@
+{
+  "Import PouchDB": {
+    "prefix": "pouchdb-import",
+    "body": [
+      "import PouchDB from 'pouchdb';",
+      "",
+      "$1"
+    ],
+    "description": "Import PouchDB into your project"
+  },
+  "Initialize PouchDB": {
+    "prefix": "pouchdb-init",
+    "body": [
+      "const db = new PouchDB('${1:db_name}');",
+      "$2"
+    ],
+    "description": "Initialize PouchDB Database"
+  },
+  "Insert PouchDB Document": {
+    "prefix": "pouchdb-insert",
+    "body": [
+      "const doc = {",
+      "\t_id: '${1:id}',",
+      "\t${2:field_1}: ${3:value_1},",
+      "\t${4:field_2}: ${5:value_2}",
+      "};",
+      "db.put(doc)",
+      ".then(function(response) {",
+      "\tconsole.log(response);",
+      "}).catch(function(error) {",
+      "\tconsole.log(error);",
+      "});"
+    ],
+    "description": "Insert a Document into PouchDB"
+  },
+  "Get PouchDB Document": {
+    "prefix": "pouchdb-get",
+    "body": [
+      "db.get('${1:doc_id}')",
+      ".then(function(doc) {",
+      "\tconsole.log(doc);",
+      "}).catch(function(error) {",
+      "\tconsole.log(error);",
+      "});"
+    ],
+    "description": "Get a Document from PouchDB"
+  },
+  "Update PouchDB Document": {
+    "prefix": "pouchdb-update",
+    "body": [
+      "db.get('${1:doc_id}')",
+      ".then(function(doc) {",
+      "\tdoc.${2:field} = ${3:new_value};",
+      "\treturn db.put(doc);",
+      "}).then(function(response) {",
+      "\tconsole.log(response);",
+      "}).catch(function(error) {",
+      "\tconsole.log(error);",
+      "});"
+    ],
+    "description": "Update a Document in PouchDB"
+  },
+  "Delete PouchDB Document": {
+    "prefix": "pouchdb-delete",
+    "body": [
+      "db.get('${1:doc_id}')",
+      ".then(function(doc) {",
+      "\treturn db.remove(doc);",
+      "}).then(function(response) {",
+      "\tconsole.log(response);",
+      "}).catch(function(error) {",
+      "\tconsole.log(error);",
+      "});"
+    ],
+    "description": "Delete a Document from PouchDB"
+  }
+}
