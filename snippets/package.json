@@ -10,7 +10,7 @@
         "language": [
           "vue"
         ],
-        "path": "./vue/element.json"
+        "path": "./vue/element-ui.json"
       },
       {
         "language": [
