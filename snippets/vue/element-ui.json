@@ -45,6 +45,24 @@
     ],
     "description": "Element UI Checkbox component"
   },
+  "ElRadioGroup": {
+    "prefix": "el-radio-group",
+    "body": [
+      "<el-radio-group v-model=\"$1\"${2: size=\"small\"}>",
+      "\t<el-radio label=\"$3\">$4</el-radio>",
+      "</el-radio-group>"
+    ],
+    "description": "Element UI Radio Group component"
+  },
+  "ElRadioButton": {
+    "prefix": "el-radio-button",
+    "body": [
+      "<el-radio-group v-model=\"$1\"${2: size=\"small\"}>",
+      "\t<el-radio-button label=\"$3\">$4</el-radio-button>",
+      "</el-radio-group>"
+    ],
+    "description": "Element UI Radio Button component"
+  },
   "ElRadio": {
     "prefix": "el-radio",
     "body": [
@@ -92,6 +110,22 @@
       "el-checkbox(v-model=\"$1\") $2"
     ],
     "description": "Element UI Checkbox component"
+  },
+  "ElRadioGroup-pug": {
+    "prefix": "el-radio-group-pug",
+    "body": [
+      "el-radio-group(v-model=\"$1\"${2: size=\"small\"})",
+      "\tel-radio(label=\"$3\") $4"
+    ],
+    "description": "Element UI Radio Group component"
+  },
+  "ElRadioButton-pug": {
+    "prefix": "el-radio-button-pug",
+    "body": [
+      "el-radio-group(v-model=\"$1\"${2: size=\"small\"})",
+      "\tel-radio-button(label=\"$3\") $4"
+    ],
+    "description": "Element UI Radio Button component"
   },
   "ElRadio-pug": {
     "prefix": "el-radio-pug",
