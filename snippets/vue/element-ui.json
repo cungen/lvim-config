@@ -242,7 +242,7 @@
         "prefix": "el-tooltip-pug",
         "body": [
             "el-tooltip(content=\"$1\")",
-            "\t| $2",
+            "\t| $2"
         ],
         "description": "Element UI Tooltip component"
     }
