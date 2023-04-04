@@ -42,6 +42,8 @@ lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 -- Automatically install missing parsers when entering buffer
 lvim.builtin.treesitter.auto_install = true
 
+lvim.builtin.telescope.defaults.path_display = { "absolute" }
+
 -- lvim.builtin.treesitter.ignore_install = { "haskell" }
 
 -- -- always installed on startup, useful for parsers without a strict filetype
@@ -113,6 +115,19 @@ formatters.setup {
 -- }
 
 lvim.plugins = {
+    { "zbirenbaum/copilot.lua",
+      event = { "VimEnter" },
+      config = function()
+        vim.defer_fn(function()
+          require("copilot").setup {
+              plugin_manager_path = get_runtime_dir() .. "/site/pack/packer",
+          }
+        end, 100)
+      end,
+    },
+    { "zbirenbaum/copilot-cmp",
+      after = { "copilot.lua", "nvim-cmp" },
+    },
     {
       "mattn/emmet-vim",
     },
@@ -126,3 +141,5 @@ lvim.plugins = {
 --     require("nvim-treesitter.highlight").attach(0, "bash")
 --   end,
 -- })
+
+
