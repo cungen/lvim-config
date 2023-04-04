@@ -1,179 +1,232 @@
 {
-  "ElButton": {
-    "prefix": "el-button",
-    "body": [
-      "<el-button type=\"$1\">$2</el-button>"
-    ],
-    "description": "Element UI Button component"
-  },
-  "ElInput": {
-    "prefix": "el-input",
-    "body": [
-      "<el-input v-model=\"$1\" placeholder=\"$2\"></el-input>"
-    ],
-    "description": "Element UI Input component"
-  },
-  "ElSelect": {
-    "prefix": "el-select",
-    "body": [
-      "<el-select v-model=\"$1\" placeholder=\"$2\">",
-      "\t<el-option label=\"$3\" value=\"$4\"></el-option>",
-      "</el-select>"
-    ],
-    "description": "Element UI Select component"
-  },
-  "ElDatePicker": {
-    "prefix": "el-date-picker",
-    "body": [
-      "<el-date-picker v-model=\"$1\" type=\"$2\" placeholder=\"$3\"></el-date-picker>"
-    ],
-    "description": "Element UI Date Picker component"
-  },
-  "ElTable": {
-    "prefix": "el-table",
-    "body": [
-      "<el-table :data=\"$1\">",
-      "\t<el-table-column prop=\"$2\" label=\"$3\"></el-table-column>",
-      "</el-table>"
-    ],
-    "description": "Element UI Table component"
-  },
-  "ElCheckbox": {
-    "prefix": "el-checkbox",
-    "body": [
-      "<el-checkbox v-model=\"$1\">$2</el-checkbox>"
-    ],
-    "description": "Element UI Checkbox component"
-  },
-  "ElRadioGroup": {
-    "prefix": "el-radio-group",
-    "body": [
-      "<el-radio-group v-model=\"$1\"${2: size=\"small\"}>",
-      "\t<el-radio label=\"$3\">$4</el-radio>",
-      "</el-radio-group>"
-    ],
-    "description": "Element UI Radio Group component"
-  },
-  "ElRadioButton": {
-    "prefix": "el-radio-button",
-    "body": [
-      "<el-radio-group v-model=\"$1\"${2: size=\"small\"}>",
-      "\t<el-radio-button label=\"$3\">$4</el-radio-button>",
-      "</el-radio-group>"
-    ],
-    "description": "Element UI Radio Button component"
-  },
-  "ElRadio": {
-    "prefix": "el-radio",
-    "body": [
-      "<el-radio v-model=\"$1\" label=\"$2\">$3</el-radio>"
-    ],
-    "description": "Element UI Radio component"
-  },
-  "ElForm": {
-    "prefix": "el-form",
-    "body": [
-      "<el-form ref=\"$1\" :model=\"$2\" :rules=\"$3\">",
-      "\t<el-form-item label=\"$4\" prop=\"$5\">",
-      "\t\t<el-input v-model=\"$6\" placeholder=\"$7\"></el-input>",
-      "\t</el-form-item>",
-      "</el-form>"
-    ],
-    "description": "Element UI Form component"
-  },
-  "ElPagination": {
-    "prefix": "el-pagination",
-    "body": [
-      "<el-pagination :current-page=\"$1\" :page-size=\"$2\" layout=\"$3\" :total=\"$4\" @current-change=\"$5\"></el-pagination>"
-    ],
-    "description": "Element UI Pagination component"
-  },
-  "ElDialog": {
-    "prefix": "el-dialog",
-    "body": [
-      "<el-dialog title=\"$1\" :visible.sync=\"$2\">",
-      "\t$3",
-      "</el-dialog>"
-    ],
-    "description": "Element UI Dialog component"
-  },
-  "ElButton-pug": {
-    "prefix": "el-button-pug",
-    "body": [
-      "el-button(type=\"$1\", @click=\"$2\") $3"
-    ],
-    "description": "Element UI Button component"
-  },
-  "ElCheckbox-pug": {
-    "prefix": "el-checkbox-pug",
-    "body": [
-      "el-checkbox(v-model=\"$1\") $2"
-    ],
-    "description": "Element UI Checkbox component"
-  },
-  "ElRadioGroup-pug": {
-    "prefix": "el-radio-group-pug",
-    "body": [
-      "el-radio-group(v-model=\"$1\"${2: size=\"small\"})",
-      "\tel-radio(label=\"$3\") $4"
-    ],
-    "description": "Element UI Radio Group component"
-  },
-  "ElRadioButton-pug": {
-    "prefix": "el-radio-button-pug",
-    "body": [
-      "el-radio-group(v-model=\"$1\"${2: size=\"small\"})",
-      "\tel-radio-button(label=\"$3\") $4"
-    ],
-    "description": "Element UI Radio Button component"
-  },
-  "ElRadio-pug": {
-    "prefix": "el-radio-pug",
-    "body": [
-      "el-radio(v-model=\"$1\", label=\"$2\") $3"
-    ],
-    "description": "Element UI Radio component"
-  },
-  "ElInput-pug": {
-    "prefix": "el-input-pug",
-    "body": [
-      "el-input(v-model=\"$1\", placeholder=\"$2\", :type=\"$3\")"
-    ],
-    "description": "Element UI Input component"
-  },
-  "ElForm-pug": {
-    "prefix": "el-form-pug",
-    "body": [
-      "el-form(ref=\"$1\", :model=\"$2\", :rules=\"$3)",
-      "\tel-form-item(label=\"$4\", prop=\"$5\")",
-      "\t\tel-input(v-model=\"$6\", placeholder=\"$7\")",
-      "\tel-form-item",
-      "el-form"
-    ],
-    "description": "Element UI Form component"
-  },
-  "ElFormItem-pug": {
-    "prefix": "el-form-item-pug",
-    "body": [
-      "el-form-item(label=\"$1\", prop=\"$2\")",
-      "\t$3"
-    ],
-    "description": "Element UI Form Item component"
-  },
-  "ElPagination-pug": {
-    "prefix": "el-pagination-pug",
-    "body": [
-      "el-pagination(:current-page=\"$1\", :page-size=\"$2\", layout=\"$3\", :total=\"$4\", @current-change=\"$5\")"
-    ],
-    "description": "Element UI Pagination component"
-  },
-  "ElDialog-pug": {
-    "prefix": "el-dialog-pug",
-    "body": [
-      "el-dialog(title=\"$1\", :visible.sync=\"$2\")",
-      "\t$3"
-    ],
-    "description": "Element UI Dialog component"
-  }
+    "ElButton": {
+        "prefix": "el-button",
+        "body": [
+            "<el-button type=\"$1\">$2</el-button>"
+        ],
+        "description": "Element UI Button component"
+    },
+    "ElButton-pug": {
+        "prefix": "el-button-pug",
+        "body": [
+            "el-button(type=\"$1\", @click=\"$2\") $3"
+        ],
+        "description": "Element UI Button component"
+    },
+    "ElInput": {
+        "prefix": "el-input",
+        "body": [
+            "<el-input v-model=\"$1\" placeholder=\"$2\"></el-input>"
+        ],
+        "description": "Element UI Input component"
+    },
+    "ElInput-pug": {
+        "prefix": "el-input-pug",
+        "body": [
+            "el-input(v-model=\"$1\", placeholder=\"$2\", :type=\"$3\")"
+        ],
+        "description": "Element UI Input component"
+    },
+    "ElSelect": {
+        "prefix": "el-select",
+        "body": [
+            "<el-select v-model=\"$1\" placeholder=\"$2\">",
+            "\t<el-option label=\"$3\" value=\"$4\"></el-option>",
+            "</el-select>"
+        ],
+        "description": "Element UI Select component"
+    },
+    "ElSelect-pug": {
+        "prefix": "el-select-pug",
+        "body": [
+            "el-select(v-model=\"$1\" placeholder=\"$2\")",
+            "\tel-option(label=\"$3\" value=\"$4\")"
+        ],
+        "description": "Element UI Select component"
+    },
+    "ElDatePicker": {
+        "prefix": "el-date-picker",
+        "body": [
+            "<el-date-picker v-model=\"$1\" type=\"$2\" placeholder=\"$3\"></el-date-picker>"
+        ],
+        "description": "Element UI Date Picker component"
+    },
+    "ElDatePicker-pug": {
+        "prefix": "el-date-picker-pug",
+        "body": [
+            "el-date-picker(v-model=\"$1\" type=\"$2\" placeholder=\"$3\")"
+        ],
+        "description": "Element UI Date Picker component"
+    },
+    "ElDropdown": {
+        "prefix": "el-dropdown",
+        "body": [
+            "<el-dropdown ${1:trigger=\"click\"} @command=\"${2:handleCommand}\">",
+            "\t${3:下拉菜单}",
+            "\t<el-dropdown-menu slot=\"dropdown\">",
+            "\t\t<el-dropdown-item command=\"${4:a}\">$5</el-dropdown-item>",
+            "\t</el-dropdown-menu>",
+            "</el-dropdown>"
+        ],
+        "description": "Element UI Dropdown component"
+    },
+    "ElDropdown-pug": {
+        "prefix": "el-dropdown-pug",
+        "body": [
+            "el-dropdown(${1:trigger=\"click\"} @command=\"${2:handleCommand}\")",
+            "\t${3:下拉菜单}",
+            "\tel-dropdown-menu(slot=\"dropdown\")",
+            "\t\tel-dropdown-item(command=\"${4:a}\") $5"
+        ],
+        "description": "Element UI Dropdown component"
+    },
+    "ElTable": {
+        "prefix": "el-table",
+        "body": [
+            "<el-table :data=\"$1\">",
+            "\t<el-table-column prop=\"$2\" label=\"$3\"></el-table-column>",
+            "</el-table>"
+        ],
+        "description": "Element UI Table component"
+    },
+    "ElTable-pug": {
+        "prefix": "el-table-pug",
+        "body": [
+            "el-table(:data=\"$1\")",
+            "\tel-table-column(prop=\"$2\" label=\"$3\")"
+        ],
+        "description": "Element UI Table component"
+    },
+    "ElCheckbox": {
+        "prefix": "el-checkbox",
+        "body": [
+            "<el-checkbox v-model=\"$1\">$2</el-checkbox>"
+        ],
+        "description": "Element UI Checkbox component"
+    },
+    "ElCheckbox-pug": {
+        "prefix": "el-checkbox-pug",
+        "body": [
+            "el-checkbox(v-model=\"$1\") $2"
+        ],
+        "description": "Element UI Checkbox component"
+    },
+    "ElRadioGroup": {
+        "prefix": "el-radio-group",
+        "body": [
+            "<el-radio-group v-model=\"$1\"${2: size=\"small\"}>",
+            "\t<el-radio label=\"$3\">$4</el-radio>",
+            "</el-radio-group>"
+        ],
+        "description": "Element UI Radio Group component"
+    },
+    "ElRadioGroup-pug": {
+        "prefix": "el-radio-group-pug",
+        "body": [
+            "el-radio-group(v-model=\"$1\"${2: size=\"small\"})",
+            "\tel-radio(label=\"$3\") $4"
+        ],
+        "description": "Element UI Radio Group component"
+    },
+    "ElRadioButton": {
+        "prefix": "el-radio-button",
+        "body": [
+            "<el-radio-group v-model=\"$1\"${2: size=\"small\"}>",
+            "\t<el-radio-button label=\"$3\">$4</el-radio-button>",
+            "</el-radio-group>"
+        ],
+        "description": "Element UI Radio Button component"
+    },
+    "ElRadioButton-pug": {
+        "prefix": "el-radio-button-pug",
+        "body": [
+            "el-radio-group(v-model=\"$1\"${2: size=\"small\"})",
+            "\tel-radio-button(label=\"$3\") $4"
+        ],
+        "description": "Element UI Radio Button component"
+    },
+    "ElRadio": {
+        "prefix": "el-radio",
+        "body": [
+            "<el-radio v-model=\"$1\" label=\"$2\">$3</el-radio>"
+        ],
+        "description": "Element UI Radio component"
+    },
+    "ElRadio-pug": {
+        "prefix": "el-radio-pug",
+        "body": [
+            "el-radio(v-model=\"$1\", label=\"$2\") $3"
+        ],
+        "description": "Element UI Radio component"
+    },
+    "ElForm": {
+        "prefix": "el-form",
+        "body": [
+            "<el-form ref=\"$1\" :model=\"$2\" :rules=\"$3\">",
+            "\t<el-form-item label=\"$4\" prop=\"$5\">",
+            "\t\t<el-input v-model=\"$6\" placeholder=\"$7\"></el-input>",
+            "\t</el-form-item>",
+            "</el-form>"
+        ],
+        "description": "Element UI Form component"
+    },
+    "ElForm-pug": {
+        "prefix": "el-form-pug",
+        "body": [
+            "el-form(ref=\"$1\", :model=\"$2\", :rules=\"$3)",
+            "\tel-form-item(label=\"$4\", prop=\"$5\")",
+            "\t\tel-input(v-model=\"$6\", placeholder=\"$7\")",
+            "\tel-form-item",
+            "el-form"
+        ],
+        "description": "Element UI Form component"
+    },
+    "ElFormItem": {
+        "prefix": "el-form-item",
+        "body": [
+            "<el-form-item label=\"$1\" prop=\"$2\">",
+            "\t$3",
+            "</el-form-item>"
+        ],
+        "description": "Element UI Form Item component"
+    },
+    "ElFormItem-pug": {
+        "prefix": "el-form-item-pug",
+        "body": [
+            "el-form-item(label=\"$1\", prop=\"$2\")",
+            "\t$3"
+        ],
+        "description": "Element UI Form Item component"
+    },
+    "ElPagination": {
+        "prefix": "el-pagination",
+        "body": [
+            "<el-pagination :current-page=\"$1\" :page-size=\"$2\" layout=\"$3\" :total=\"$4\" @current-change=\"$5\"></el-pagination>"
+        ],
+        "description": "Element UI Pagination component"
+    },
+    "ElPagination-pug": {
+        "prefix": "el-pagination-pug",
+        "body": [
+            "el-pagination(:current-page=\"$1\", :page-size=\"$2\", layout=\"$3\", :total=\"$4\", @current-change=\"$5\")"
+        ],
+        "description": "Element UI Pagination component"
+    },
+    "ElDialog": {
+        "prefix": "el-dialog",
+        "body": [
+            "<el-dialog title=\"$1\" :visible.sync=\"$2\">",
+            "\t$3",
+            "</el-dialog>"
+        ],
+        "description": "Element UI Dialog component"
+    },
+    "ElDialog-pug": {
+        "prefix": "el-dialog-pug",
+        "body": [
+            "el-dialog(title=\"$1\", :visible.sync=\"$2\")",
+            "\t$3"
+        ],
+        "description": "Element UI Dialog component"
+    }
 }
-
