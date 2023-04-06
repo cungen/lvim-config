@@ -32,6 +32,7 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 
 -- -- Change theme settings
 -- lvim.colorscheme = "lunar"
+lvim.colorscheme = "github_light"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
@@ -118,6 +119,17 @@ lvim.plugins = {
     {
       "mattn/emmet-vim",
     },
+    {
+      "folke/zen-mode.nvim",
+      config = function()
+        require("zen-mode").setup()
+        lvim.builtin.which_key.mappings["z"] = { "<cmd>ZenMode<cr>", "ZenMode" }
+      end,
+    },
+    {
+      "projekt0n/github-nvim-theme",
+       version = "v0.0.7",
+    }
 }
 
 -- -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>

@@ -10,6 +10,7 @@
   "cmp_luasnip": { "branch": "master", "commit": "18095520391186d634a0045dacaa346291096566" },
   "emmet-vim": { "branch": "master", "commit": "def5d57a1ae5afb1b96ebe83c4652d1c03640f4d" },
   "friendly-snippets": { "branch": "main", "commit": "8d91ba2dc2421a54981115f61b914974f938fa77" },
+  "github-nvim-theme": { "branch": "main", "commit": "24c8706c9ad26b944f5a76dea999dca8708f252e" },
   "gitsigns.nvim": { "branch": "main", "commit": "ca473e28382f1524aa3d2b6f04bcf54f2e6a64cb" },
   "indent-blankline.nvim": { "branch": "master", "commit": "018bd04d80c9a73d399c1061fa0c3b14a7614399" },
   "lazy.nvim": { "branch": "main", "commit": "57cce98dfdb2f2dd05a0567d89811e6d0505e13b" },
@@ -42,5 +43,6 @@
   "toggleterm.nvim": { "branch": "main", "commit": "ed6c92d6708e5208360347f2281de99602061dc8" },
   "tokyonight.nvim": { "branch": "main", "commit": "1b0c88094548a62641ece1e668fa9a234e1c539e" },
   "vim-illuminate": { "branch": "master", "commit": "a2907275a6899c570d16e95b9db5fd921c167502" },
-  "which-key.nvim": { "branch": "main", "commit": "87b1459b3e0be0340da2183fc4ec8a00b2960678" }
+  "which-key.nvim": { "branch": "main", "commit": "87b1459b3e0be0340da2183fc4ec8a00b2960678" },
+  "zen-mode.nvim": { "branch": "main", "commit": "d907e638c879642d226d27469b53db6925f69d4c" }
 }
