@@ -129,7 +129,10 @@ lvim.plugins = {
     {
       "projekt0n/github-nvim-theme",
        version = "v0.0.7",
-    }
+    },
+    {
+        "Exafunction/codeium.vim",
+    },
 }
 
 -- -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
