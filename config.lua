@@ -84,7 +84,7 @@ formatters.setup {
   {
     command = "prettier",
     -- extra_args = { "--print-width", "100" },
-    filetypes = { "typescript", "typescriptreact", "vue", "scss" },
+    filetypes = { "typescript", "typescriptreact", "vue", "scss", "javascript" },
   },
 }
 
@@ -116,23 +116,30 @@ formatters.setup {
 -- }
 
 lvim.plugins = {
-    {
-      "mattn/emmet-vim",
-    },
-    {
-      "folke/zen-mode.nvim",
-      config = function()
-        require("zen-mode").setup()
-        lvim.builtin.which_key.mappings["z"] = { "<cmd>ZenMode<cr>", "ZenMode" }
-      end,
-    },
-    {
-      "projekt0n/github-nvim-theme",
-       version = "v0.0.7",
-    },
-    {
-        "Exafunction/codeium.vim",
-    },
+  {
+    "mattn/emmet-vim",
+  },
+  {
+    "folke/zen-mode.nvim",
+    config = function()
+      require("zen-mode").setup()
+      lvim.builtin.which_key.mappings["z"] = { "<cmd>ZenMode<cr>", "ZenMode" }
+    end,
+  },
+  {
+    "projekt0n/github-nvim-theme",
+     version = "v0.0.7",
+  },
+  {
+    "Exafunction/codeium.vim",
+    config = function()
+      vim.g.codeium_disable_bindings = 1
+      vim.keymap.set('i', '<C-g>', function () return vim.fn['codeium#Accept']() end, { expr = true })
+      vim.keymap.set('i', '<M-]>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true })
+      vim.keymap.set('i', '<M-[>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true })
+      vim.keymap.set('i', '<c-]>', function() return vim.fn['codeium#Clear']() end, { expr = true })
+    end,
+  },
 }
 
 -- -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
